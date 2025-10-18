@@ -1,0 +1,117 @@
+Escenario: Se muestra pestaña contacto en web
+Dado: Abrimos un navegador webCuando accedemos a www.innocv.com/web/
+Entonces la pestaña Contacto aparece en el menú superior de forma correcta
+
+Escenario: Acceso a apartado contacto de la web
+Dado: Abrimos un navegador web y accedemos a www.innocv.com/web/
+Cuando realizamos click en la pestaña contacto del menu
+Entonces accedemos a la url www.innocv.com/web/contacto
+
+Escenario: Apartado contacto se muestra correctamente
+Dado: Abrimos un navegador webCuando accedemos a www.innocv.com/web/contacto
+Entonces se muestra el formulario de contacto de forma correcta
+Y se muestra el mapa de forma correcta
+
+Escenario: Envió de formulario de forma correcta
+Dado: Abrimos un navegador web y accedemos a www.innocv.com/web/contacto
+Cuando introducimos el nombre en el campo correspondiente
+Y introducimos los apellidos en el campo correspondiente
+Y introducimos el email en el campo correspondiente
+Y introducimos el numero de teléfono en el campo correspondiente
+Y introducimos el motivo de la consulta en el campo correspondiente
+Y marcamos como leídos términos de uso y privacidad 
+Entonces se muestra el mensaje de formulario enviado correctamente
+Y se recibe la notificación correspondiente
+
+Escenario: Envió de formulario sin introducir nombre 
+Dado: Abrimos un navegador web y accedemos a www.innocv.com/web/contacto
+Cuando introducimos los apellidos en el campo correspondiente
+Y introducimos el email en el campo correspondiente
+Y introducimos el numero de teléfono en el campo correspondiente
+Y introducimos el motivo de la consulta en el campo correspondiente
+Y marcamos como leídos términos de uso y privacidad 
+Entonces se muestra el mensaje de campo requerido
+Y no se recibe la notificación correspondiente
+
+Escenario: Envió de formulario sin introducir apellidos
+Dado: Abrimos un navegador web y accedemos a www.innocv.com/web/contacto
+Cuando introducimos el nombre en el campo correspondiente
+Y introducimos el email en el campo correspondiente
+Y introducimos el numero de teléfono en el campo correspondiente
+Y introducimos el motivo de la consulta en el campo correspondiente
+Y marcamos como leídos términos de uso y privacidad 
+Entonces se muestra el mensaje de campo requerido
+Y no se recibe la notificación correspondiente
+
+Escenario: Envió de formulario sin introducir apellidos
+Dado: Abrimos un navegador web y accedemos a www.innocv.com/web/contacto
+Cuando introducimos el nombre en el campo correspondiente
+Y introducimos el email en el campo correspondiente
+Y introducimos el numero de teléfono en el campo correspondiente
+Y introducimos el motivo de la consulta en el campo correspondiente
+Y marcamos como leídos términos de uso y privacidad 
+Entonces se muestra el mensaje de campo requerido
+Y no se recibe la notificación correspondiente
+
+Escenario: Envió de formulario sin introducir email
+Dado: Abrimos un navegador web y accedemos a www.innocv.com/web/contacto
+Cuando introducimos el nombre en el campo correspondiente
+Y introducimos los apellidos en el campo correspondiente
+Y introducimos el numero de teléfono en el campo correspondiente
+Y introducimos el motivo de la consulta en el campo correspondiente
+Y marcamos como leídos términos de uso y privacidad 
+Entonces se muestra el mensaje de campo requerido
+Y no se recibe la notificación correspondiente
+
+Escenario: Envió de formulario sin introducir teléfono
+Dado: Abrimos un navegador web y accedemos a www.innocv.com/web/contacto
+Cuando introducimos el nombre en el campo correspondiente
+Y introducimos los apellidos en el campo correspondiente
+Y introducimos el email en el campo correspondiente
+Y introducimos el motivo de la consulta en el campo correspondiente
+Y marcamos como leídos términos de uso y privacidad 
+Entonces se muestra el mensaje de campo requerido
+Y no se recibe la notificación correspondiente
+
+Escenario: Envió de formulario sin introducir la consulta
+Dado: Abrimos un navegador web y accedemos a www.innocv.com/web/contacto
+Cuando introducimos el nombre en el campo correspondiente
+Y introducimos los apellidos en el campo correspondiente
+Y introducimos el email en el campo correspondiente
+Y introducimos el numero de teléfono en el campo correspondiente
+Y marcamos como leídos términos de uso y privacidad 
+Entonces se muestra el mensaje de campo requerido
+Y no se recibe la notificación correspondiente
+
+Escenario: Envió de formulario sin marcar términos y política leídos
+Dado: Abrimos un navegador web y accedemos a www.innocv.com/web/contacto
+Cuando introducimos el nombre en el campo correspondiente
+Y introducimos los apellidos en el campo correspondiente
+Y introducimos el email en el campo correspondiente
+Y introducimos el numero de teléfono en el campo correspondiente
+Y introducimos el motivo de la consulta en el campo correspondiente
+Entonces se muestra el mensaje de campo requerido
+Y no se recibe la notificación correspondiente
+
+Escenario: Envió de formulario introduciendo un email con formato erróneo
+Dado: Abrimos un navegador web y accedemos a www.innocv.com/web/contacto
+Cuando introducimos el nombre en el campo correspondiente
+Y introducimos los apellidos en el campo correspondiente
+Y introducimos el email con formato erróneo en el campo correspondiente
+Y introducimos el numero de teléfono en el campo correspondiente
+Y introducimos el motivo de la consulta en el campo correspondiente
+Y marcamos como leídos términos de uso y privacidad
+Entonces se muestra el mensaje de correo electrónico inválido
+Y no se recibe la notificación correspondiente
+
+Escenario: Términos de uso se muestran correctamente
+Dado: Abrimos un navegador web
+Cuando accedemos a www.innocv.com/web/contacto
+Y hacemos click en términos de uso
+Entonces se muestran los términos de uso correctamente
+
+Escenario: Política de privacidad de uso se muestran correctamente
+Dado: Abrimos un navegador web
+Cuando accedemos a www.innocv.com/web/contacto
+Y hacemos click en términos de uso
+Entonces se muestran la política de seguridad correctamente
